@@ -3,7 +3,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 
 
-theurl = "https://twitter.com/RanjSriv"
+theurl = "https://twitter.com/MarqueeSoftware"
 thepage = urllib.request.urlopen(theurl)
 soup = BeautifulSoup(thepage,"html.parser")
 
