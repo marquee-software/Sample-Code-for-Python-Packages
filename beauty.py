@@ -7,8 +7,8 @@ theurl = "https://twitter.com/MarqueeSoftware"
 thepage = urllib.request.urlopen(theurl)
 soup = BeautifulSoup(thepage,"html.parser")
 
-#print(soup.title.text)
-#print (soup.findAll('a'))
-#for link in soup.findAll('a'):
-#    print (link.get('href'))
-print (soup.find('div',{"class":"ProfileHeaderCard"}))
+#print(soup.prettify())
+print (soup.findAll('a'))
+for link in soup.findAll('a'):
+    print (link.get('href'))
+#print (soup.find('div',{"class":"ProfileHeaderCard"}))
