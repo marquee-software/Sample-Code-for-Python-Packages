@@ -8,6 +8,7 @@ thepage = urllib.request.urlopen(theurl)
 soup = BeautifulSoup(thepage,"html.parser")
 
 # Testing VSCode with Github
+
 #print(soup.prettify())
 print (soup.findAll('a'))
 for link in soup.findAll('a'):
