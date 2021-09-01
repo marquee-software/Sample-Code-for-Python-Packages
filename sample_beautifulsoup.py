@@ -1,14 +1,11 @@
-import urllib
+import urllib                           # urllib is a package that collects several modules for working with URLs
 import urllib.request
-from bs4 import BeautifulSoup
-
-
+from bs4 import BeautifulSoup           # Beautiful Soup is a Python library for pulling data out of HTML and XML files.
+# webpage 
 theurl = "https://twitter.com/MarqueeSoftware"
 thepage = urllib.request.urlopen(theurl)
 soup = BeautifulSoup(thepage,"html.parser")
-
-# Testing VSCode with Github
-
+# VSCode with Github
 #print(soup.prettify())
 print (soup.findAll('a'))
 for link in soup.findAll('a'):
