@@ -1,2 +1,2 @@
 # one
-First repository
+Sample code for various Python packages
