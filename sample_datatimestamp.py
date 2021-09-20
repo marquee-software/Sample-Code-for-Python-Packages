@@ -10,7 +10,12 @@ folder_name = r'downloaded-files-'
 folder_time = datetime.now().strftime("%Y-%m-%d_%I-%M-%S_%p")
 folder_to_save_files = drive_letter + folder_name + folder_time
 print(folder_to_save_files)
+
 # IF no such folder exists, create one automatically
+'''
 if not os.path.exists(folder_to_save_files):
     os.mkdir(folder_to_save_files)
-
+'''
+# A safer way to create your path, might be:
+# folder_to_save_files = shutil.os.path.join(drive_letter, folder_name +folder_time)
+# import shutil # statement can replace the import os statement
